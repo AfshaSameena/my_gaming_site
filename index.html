@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming (5V5)</title>
+    <style>
+        * {
+            margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;      
+        }
+        body {   
+               margin: 0;
+               padding: 0;
+               font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+               background-color: #0b0b0b;
+        }
+        
+        header{
+            background-color: rgb(5, 5, 5);
+            text-align:center;
+            padding:42px;
+            color: #f2b40a;
+            font-size:50px ;
+            font-weight: bolder;
+            position: static;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+           
+        }
+        nav {
+            background-color: black;
+            padding:10px;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            gap:25px
+            
+        }
+        nav a {
+            text-decoration: wavy;
+            color:rgb(207, 28, 139);
+            padding:4px 8px;
+            border-radius: 9px;
+            text-align:center ;
+        }
+        nav a:hover {
+            color:rgba(112, 224, 81, 1)
+        }
+        section {
+            padding: 250px 250px; 
+            display: flex;
+            border-radius: 10px;
+           
+        }
+        .hero-container {
+            position:relative;
+            width:100%;
+            height: 100%;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+        .hero-image {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            background-position: center;
+            padding:20rem;
+            opacity:0.78;
+            
+        }
+        .hero-text {
+            position:absolute;
+            top:50%;
+            left:50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+            color:rgb(104, 12, 43);
+            text-shadow:5px 5px 5px #5621a6;
+            font-size: 57px;
+            font-weight:bold;
+        }
+        .hero-text p {
+            font-size:45px ;
+            font-weight: lighter;
+            font-style: italic;
+            color:#ea5b1e;
+            text-shadow:-5px -3px 5px rgb(122, 8, 50);
+
+
+        }
+        .button-shadow {
+            display:flexbox;
+            padding:12px 24px;
+            font-size: medium;
+            font-weight: bold;
+            font-style: italic;
+            color:azure;
+            background-color: rgb(255, 0, 0);
+            transition:background-color 0.3s ease;
+        }
+        .button-shadow:hover{
+            background-color: rgb(241, 183, 8);
+        }
+        section {
+            padding:40px 20px;
+            min-height: 50vh;
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            text-shadow:-5px -5px 0px  rgb(31, 104, 80);
+            color:aquamarine;
+            text-transform:uppercase;
+            letter-spacing: 2px;
+            font-size: 50px;
+            font-weight: bold;   
+        }
+        .coregameplay-grid{
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+            justify-content: center;
+            margin-top: 20px;    
+        }
+        .gamemodes-grid {
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:30px;
+            justify-content: center;
+            margin-top: 20px;    
+
+        }
+        .card{
+            background: #d89494;
+            border-radius: 12px;
+            padding:20px;
+            margin-top:50px;
+            box-shadow: 0 6px 16px rgb(97, 9, 9);
+            transition: transform 0.3s;
+        }
+        .card:hover{
+            transform: translatey(-10px);
+        }
+        .card h3{
+            background:#333;
+            color:#f0f0f0;
+            text-align: center;
+            padding:20px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        dt {
+            font-weight: bold;
+            color:rgb(244, 17, 214);
+            font-size:45px;
+            margin-top:20px;
+            text-decoration: dotted;
+            margin-left: 20px;
+        }
+        dd {
+             font-size: 35px;
+             font-weight: lighter;
+             margin-top: 10px;
+             color:#d89494;
+             margin-left:40px;
+
+        }
+        .class-container {
+            text-align: center;
+        }
+        footer {
+            color:bisque;
+            font-size: 30px;
+            text-align:center;
+            padding:40px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>Moba Legends Bang Bang</header>
+    
+    <nav>
+        <a href="#core game play"> core game play</a>
+        <a href="#Game Modes"> Game Modes</a>
+        <a href="#Cosmetic and Comunity Features">Cosmetic and Comunity Features</a>
+    </nav>
+    <div class="hero-container">
+        <img class="hero-image" src="game1.jpg" alt="description of the image">
+        <div class="hero-text">
+            <h1>Hesitation is defeat</h1>
+            <p>Macau is limited in size and is expensive,so gaming and leisure devolopment must be more efficient.</p>
+            <button class="button-shadow">Shadows die twice</button>
+        </div>
+        </div>
+    
+
+    <section id="core game play"  class="coregameplay-grid">
+        <h2>Core Game Play</h2>
+            <div class="card">
+                <h3>Classic 5v5 MOBA action</h3>
+                <p>The main game mode pits two teams of five players against each oyher on a traditional MOBA map.</p>
+            </div>
+            <div class="card">
+                <h3>Fair Competition</h3>
+                <p>The game emphasis that victory is based on skill and stratergy,not how much money a player spends.</p>
+                </div>
+                <div class="card">
+                    <h3>Strategic teamwork</h3>
+                    <p>Victory depend on coordintion with your team.The game featurees clear hero roles--tank marksman,assassin,fighter,mage and support.</p>
+                </div>
+    </section>
+
+    <section id="Game Modes"  class="coregameplay-grid">
+        <h2>Game Modes</h2>
+            <div class="card">
+                <h3>Ranked</h3>
+                <p>This mode is competitive 5v5 game where wins and losses affect player's rank</p>  
+            </div>
+            <div class="card">
+                <h3>Brawl</h3>
+                <p>A fast,choatic 5v5 mode where all players are funneled into a single lane.</p>
+            </div>
+            <div class="card">
+                <h3>Magic Chess</h3>
+                <p>An 8 player auto-battler mode played on chessboard.players recruit and upgrade heroes to form.</p>
+            </div>
+            <div class="card">
+                <h3>Arcade</h3>
+                <p> A hub for special, limited-time events and game modes.</p>
+            </div>
+    </section>
+    <h2>Cosmetic and community features</h2>
+    <dl>
+        <dt>Skins</dt>
+        <dd>Amajor features and avast collection of cosmetic hero and skins.</dd>
+        <dd class="class-container">
+            <img src="game4.png" alt="game4 Photo" width="80%" height="400"
+        </dd>
+    </dl>
+    <dl>
+        <dt>Streaming</dt>
+        <dd>The game has a built-in feature for live-streaming matches.</dd>
+        <dd class="class-container">
+            <img src="game5.jpg" alt="game5 Photo" width="80%" height="400"
+        </dd>
+    </dl>
+    <section>
+        <dl>
+            <dt>Virtual reality</dt>
+            <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+     
+            <dd>Images created by a computer that appear to suround the person looking at them and seem almost real</dd>
+            <img src="ppt8.jpg" alt="ppt8 Photo" width="50%" height="50%"
+        </dl>
+    </section>
+    <footer>
+   Moba Legends:Bang Bang |Love playing games
+    </footer>
+
+
+</body>
+</html>
